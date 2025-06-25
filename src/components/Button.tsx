@@ -6,11 +6,11 @@ interface ButtonProps {
     size?: 'sm' | 'lg';
     title: string;
     icon?: string;
-    variant: 'btn_dark_green';
+    variant: 'btn_dark_green' | 'btn_green' | 'btn_white_text';
 }
 
 export default function Button({ type, size, title, icon, variant }: ButtonProps) {
-    const sizeClass = size === 'sm' ? 'px-4 py-2' : 'px-6 py-3';
+    const sizeClass = size === 'sm' ? 'px-6 py-2' : 'px-7 py-2.5';
   return (
     <button type={type}
     className={`flex items-center justify-center gap-2 rounded-full border ${variant} ${sizeClass}`}
