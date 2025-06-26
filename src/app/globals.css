@@ -1,16 +1,34 @@
 @import "tailwindcss";
 
-@layer base{
-    .btn_white_text{
-        @apply border-white bg-white px-4 py-2 text-[#141414];
-    }
-    .btn_green{
-        @apply bg-[#30AF5B] px-4 py-2 text-white transition-all;
-    }
-    .btn_dark_green {
-        @apply bg-[#292C27] px-4 py-2 text-white transition-all hover:bg-black;
-    }
-    .hero-map {
-        @apply absolute right-0 top-0 h-screen w-screen bg-[url('/pattern-bg.png')] bg-cover bg-center md:-right-28 xl:-top-60;
-    }
+@layer base {
+  .btn_white_text {
+    @apply border-white bg-white px-4 py-2 text-[#141414];
+  }
+  .btn_green {
+    @apply bg-[#30AF5B] px-4 py-2 text-white transition-all;
+  }
+  .btn_dark_green {
+    @apply bg-[#292C27] px-4 py-2 text-white transition-all hover:bg-black;
+  }
+  .hero-map {
+    @apply absolute right-0 top-0 h-screen w-screen bg-[url('/pattern-bg.png')] bg-cover bg-center md:-right-28 xl:-top-60;
+  }
+  .bg-img-1 {
+    @apply bg-[url('/img-1.png')] bg-cover bg-center;
+  }
+  .bg-img-2 {
+    @apply bg-[url('/img-2.png')] bg-cover bg-center;
+  }
+  .camp-quote {
+    @apply absolute -right-6 bottom-4 w-[140px] lg:bottom-10 xl:-right-8 xl:w-[186px] 2xl:right-0;
+  }
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
