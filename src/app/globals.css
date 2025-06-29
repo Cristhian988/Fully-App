@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @layer base {
+  .btn_white{
+    @apply border-white border bg-white px-8 py-3 text-[#30AF5B];
+  }
   .btn_white_text {
     @apply border-white bg-white px-4 py-2 text-[#141414];
   }
@@ -9,6 +12,9 @@
   }
   .btn_dark_green {
     @apply bg-[#292C27] px-4 py-2 text-white transition-all hover:bg-black;
+  }
+  .btn_dark_green_outline {
+    @apply bg-[#292C27] px-8 py-5 text-white;
   }
   .hero-map {
     @apply absolute right-0 top-0 h-screen w-screen bg-[url('/pattern-bg.png')] bg-cover bg-center md:-right-28 xl:-top-60;
@@ -24,6 +30,9 @@
   }
   .bg-feature{
     @apply bg-[url('/feature-bg.png')] bg-cover bg-center;
+  }
+  .bg-pattern{
+    @apply bg-[url('/pattern.png')] bg-cover bg-center;
   }
 }
 
